@@ -1,0 +1,114 @@
+# systems-solver — Project Plan
+
+## GitHub Structure (Single Repo)
+
+All projects live inside this repo, each in its own folder with code, notes, and diagrams:
+
+systems-solver/
+│
+├── number-system-converter/
+│ ├── number_converter.cpp
+│ ├── symbolic_converter.ipynb
+│ ├── number_systems.dot
+│ ├── number_systems.png
+│ ├── converter_doc.tex
+│ └── NOTES.md
+│
+├── boolean-simplifier/
+│ ├── bool_simplifier.cpp
+│ ├── boolean_simplifier.ipynb
+│ ├── logic_flow.dot
+│ ├── logic_flow.png
+│ └── NOTES.md
+│
+├── cpu-simulator/
+│ ├── cpu_simulator.cpp
+│ ├── cpu_architecture.dot
+│ ├── cpu_architecture.png
+│ └── NOTES.md
+│
+├── build-plan.md
+├── README.md
+└── .gitignore
+
+
+---
+
+## Workflow
+
+### Before Day 1
+
+- [ ] Create GitHub repo `systems-solver`.
+- [ ] Clone repo locally.
+- [ ] Add this project plan as `build-plan.md`.
+- [ ] Commit: `Initial commit – added build plan.`
+
+### After Each Project Block (~45 min)
+
+- [ ] Add or update files in correct project folder.
+- [ ] Update `NOTES.md` with 3–5 insights or questions.
+- [ ] Commit with clear, descriptive message (e.g., `Add base conversion logic and diagram`).
+- [ ] Push to GitHub.
+
+### End of Day
+
+- [ ] Review and push uncommitted changes.
+- [ ] Update `README.md` with summary paragraphs for each project worked on.
+- [ ] Commit: `Day X progress – updates to projects.`
+
+---
+
+## Day 1 — 90 Minutes  
+**Focus: Number System Conversion**
+
+### Number System Converter (C++) — 45 min
+
+- Create `number_converter.cpp`.
+- Define bases: binary, octal, decimal, hexadecimal.
+- Implement `int toDecimal(string num, int base)`.
+- Implement `string fromDecimal(int num, int base)`.
+- `main()`: input number, input base, target base, output converted number.
+- Create `number_systems.dot` diagram; export `number_systems.png`.
+- Document edge cases and input validation in `NOTES.md`.
+
+### Symbolic Base Converter (SageMath + LaTeX) — 45 min
+
+- Create `symbolic_converter.ipynb`.
+- Define `convert_base_steps(n, from_base, to_base)` with LaTeX-rendered steps.
+- Test with example conversion(s).
+- Write `converter_doc.tex` with algorithm sections and examples.
+- Include `number_systems.png` in LaTeX.
+- Note observations in `NOTES.md`.
+
+---
+
+## Day 2 — 90 Minutes  
+**Focus: Boolean Logic and CPU Simulation**
+
+### Boolean Expression Simplifier (C++ + SageMath) — 45 min
+
+- Create `bool_simplifier.cpp` with logic gates and test expressions.
+- In `boolean_simplifier.ipynb`, simplify boolean expressions, render LaTeX, export truth table image.
+- Create `logic_flow.dot` and export `logic_flow.png`.
+- Add insights to `NOTES.md`.
+
+### Basic CPU Simulator (C++) — 45 min
+
+- Create `cpu_simulator.cpp` with registers and ALU classes.
+- Simulate operations in `main()`.
+- Create `cpu_architecture.dot` and export `cpu_architecture.png`.
+- Embed diagrams in `converter_doc.tex`.
+- Document design notes in `NOTES.md`.
+
+---
+
+## Optional
+
+If needed, I can generate `.gitignore`, base `README.md`, and scaffold folder structure with placeholders.
+
+---
+
+*This plan integrates coding, documentation, and version control into a cohesive workflow for efficient learning and project management.*
+
+
+
